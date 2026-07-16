@@ -1,10 +1,28 @@
 ---
-layout: default
+layout: page
 title: "Home"
 ---
 
-{% if site.show_excerpts %}
-  {% include home.html %}
-{% else %}
-  {% include archive.html title="Posts" %}
-{% endif %}
+<p>
+  Welcome to my research website. I am Justin Kin Jun Hew, and this site highlights my current
+  research directions, selected open-source projects, and ongoing technical work.
+</p>
+
+<h2>Research Focus</h2>
+<ul>
+  <li>Computational fluid dynamics and turbulence modeling</li>
+  <li>Numerical methods for PDEs and scientific computing workflows</li>
+  <li>Data-driven modeling and analysis for physics-informed systems</li>
+</ul>
+
+<h2>Featured Projects</h2>
+<ul>
+  <li><a href="https://github.com/justinh2002/pysbp-operators">pysbp-operators</a> — Python port of SBP operators</li>
+  <li><a href="https://github.com/justinh2002/num_methods_pack">num_methods_pack</a> — Numerical methods collection for PDE solvers</li>
+  <li><a href="https://github.com/justinh2002/mhd_data_analysis">mhd_data_analysis</a> — Data analysis tooling for MHD workflows</li>
+</ul>
+
+<p>
+  For a fuller list of projects and research themes, see the
+  <a href="{{ '/research/' | relative_url }}">Research</a> page.
+</p>
