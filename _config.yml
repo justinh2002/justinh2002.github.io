@@ -1,6 +1,6 @@
 title: "Justin Kin Jun Hew"
 author: "Justin Kin Jun Hew"
-description: "Research profile and project portfolio"
+description: "Research Software Engineer at ACCESS-NRI and computational physics researcher"
 permalink: /:title/
 lang: "en"
 excerpt_separator: "\n\n\n"
@@ -18,8 +18,11 @@ minimal: false             # use a dark header
 navigation:                # accepts {file, title, url, icon, sidebaricon}
   - {file: "index.html"}
   - {file: "research.md"}
+  - {file: "publications.md"}
+  - {file: "README.md", title: "About"}
 
 external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
+  - {title: ORCID, url: "https://orcid.org/0000-0002-5238-6115"}
   - {title: Github, icon: github, url: "https://github.com/justinh2002"}
   - {title: Subscribe, icon: rss, url: "/feed.xml"}
 
