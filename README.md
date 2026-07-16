@@ -1,27 +1,25 @@
----
-title: "About"
-permalink: "/about/"
-layout: page
----
+# justinh2002.github.io
 
-## About this site
+This repository contains the source for Justin Kin Jun Hew's personal research website.
 
-This repository powers the personal research website for **Justin Kin Jun Hew**.
+## Site pages
 
-The website presents a public professional profile centered on:
+- Home: `index.html`
+- Research: `research.md`
+- Publications: `publications.md`
+- About: `about.md`
 
-- research software engineering
-- computational fluid dynamics and shock dynamics
-- magnetohydrodynamics and turbulence
-- numerical methods for scientific computing
-- software and publication links connected to ongoing research work
+## Local development
 
-## External profiles
+This site is built with Jekyll.
 
-- [ORCID](https://orcid.org/0000-0002-5238-6115)
-- [ACCESS-NRI profile](https://www.access-nri.org.au/person/justin-kin-jun-hew/)
-- [GitHub](https://github.com/justinh2002)
+```bash
+bundle install
+bundle exec jekyll build
+```
 
-## Repository notes
+To serve the site locally:
 
-This site is built with Jekyll and uses a lightweight static theme. Content pages can be updated by editing the root markdown and HTML files in this repository.
+```bash
+bundle exec jekyll serve
+```
