@@ -24,7 +24,7 @@ navigation:                # accepts {file, title, url, icon, sidebaricon}
 external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
   - {title: ORCID, icon: link, url: "https://orcid.org/0000-0002-5238-6115"}
   - {title: Github, icon: github, url: "https://github.com/justinh2002"}
-  - {title: Subscribe, icon: rss, url: "/feed.xml"}
+  - {title: ResearchGate, icon: researchgate, url: "https://www.researchgate.net/profile/Justin-Kin-Jun-Hew"}
 
 comments:
 #  disqus_shortname: ""    # see https://disqus.com/
