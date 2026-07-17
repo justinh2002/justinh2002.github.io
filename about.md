@@ -4,6 +4,11 @@ permalink: "/about/"
 layout: page
 ---
 
+<p class="page-lead">
+This website presents the public professional profile, research focus, and selected outputs of
+<strong>Justin Kin Jun Hew</strong>.
+</p>
+
 ## About this site
 
 This repository powers the personal research website for **Justin Kin Jun Hew**.
@@ -24,4 +29,5 @@ The website presents a public professional profile centered on:
 
 ## Repository notes
 
-This site is built with Jekyll and uses a lightweight static theme. Content pages can be updated by editing the root markdown and HTML files in this repository.
+This site is built with Jekyll and uses a lightweight static theme. Content pages can be updated
+by editing the root markdown and HTML files in this repository.

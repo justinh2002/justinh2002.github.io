@@ -4,6 +4,7 @@
 <meta charset="{{ site.encoding }}">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="author" content="{{ page.author | default: site.author | escape }}">
+<meta name="description" content="{{ page.description | default: site.description | escape }}">
 <meta name="generator" content="Jekyll v{{ jekyll.version }}">
 <link rel="canonical" href="{{ page.url | absolute_url }}">
 {% if site.show_frame %}
@@ -28,7 +29,10 @@
 {% endif %}
 
 <header>
-  <a href="{{ "/" | relative_url }}" class="title">{{ site.title | escape }}</a>
+  <div class="site-branding">
+    <a href="{{ "/" | relative_url }}" class="title">{{ site.title | escape }}</a>
+    <p class="site-tagline">{{ site.description | escape }}</p>
+  </div>
   {% include menu.html menu=pages %}
 </header>
 
@@ -36,7 +40,10 @@
 
 {% if site.external %}
 <footer>
-  <div>{{ site.description | default: site.title }}</div>
+  <div class="footer-copy">
+    <strong>{{ site.title | escape }}</strong>
+    <span>{{ site.description | default: site.title }}</span>
+  </div>
   {% include menu.html menu=site.external %}
 </footer>
 {% endif %}

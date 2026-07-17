@@ -4,19 +4,20 @@
 @import index, font, basic, layout, classes
 
 html
-  background: lighten($dark, 70%)
+  background: linear-gradient(180deg, lighten($dark, 75%), lighten($dark, 69%))
   padding: 0 calc(38% - 22em)
 
 body
-  box-shadow: 0 0 .3em lighten($dark, 65%)
+  box-shadow: 0 18px 55px rgba($dark, .12)
 
 body > header, body > footer
-  background: lighten($dark, 5%)
+  background: linear-gradient(135deg, rgba($dark, .98), rgba(lighten($dark, 6%), .98))
   color: $light
 
 @media (min-width: 32em)
   body > header, body > article, body > footer
-    padding: 1.75em calc(22% - 6em)
+    padding-left: calc(24% - 7em)
+    padding-right: calc(24% - 7em)
 
 @media (prefers-color-scheme: dark)
   html

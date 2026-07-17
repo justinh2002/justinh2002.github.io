@@ -5,7 +5,8 @@
 
 @media (min-width: 40em)
   body > header, body > article, body > footer
-    padding: 1.75em calc(40% - 17em)
+    padding-left: calc(42% - 18em)
+    padding-right: calc(42% - 18em)
 
 {% if site.minimal %}
 
@@ -17,12 +18,28 @@ body > header
 {% else %}
 
 body > header
-  box-shadow: 0 0 .6em rgba($dark, 0.04)
-  border-bottom: 1px solid reduce(14)
+  background: linear-gradient(135deg, rgba($dark, .98), rgba(lighten($dark, 6%), .98))
+  color: $light
+  box-shadow: 0 18px 45px rgba($dark, 0.08)
+  border-bottom: 1px solid rgba($light, .08)
 
 {% endif %}
 
+body > article
+  position: relative
+
+body > article::before
+  content: ""
+  position: absolute
+  inset: 0 auto auto 0
+  width: 12rem
+  height: 12rem
+  background: radial-gradient(circle, rgba($link-color, .14), rgba($link-color, 0))
+  pointer-events: none
+
 body > footer
+  background: linear-gradient(180deg, rgba($dark, .98), rgba(lighten($dark, 4%), .98))
+  color: $light
   box-shadow: 0 0 .6em rgba($dark, 0.04) inset
-  border-top: 1px solid reduce(14)
-  opacity: .9
+  border-top: 1px solid rgba($light, .08)
+  opacity: 1

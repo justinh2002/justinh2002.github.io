@@ -4,10 +4,17 @@ layout: page
 permalink: /research/
 ---
 
+<p class="page-lead">
+Justin Kin Jun Hew is a computational physics and research software practitioner whose work
+connects numerical methods, high-performance simulation, and reliable scientific software for
+fluid, plasma, and climate-related modelling.
+</p>
+
 ## Profile
 
-Justin Kin Jun Hew is a computational physics and research software practitioner whose work spans
-fluid dynamics, shock interactions, magnetohydrodynamics, turbulence, numerical methods, and ice-sheet modelling software.
+I work across computational fluid dynamics, shock interactions, magnetohydrodynamics, turbulence,
+high-order discretisation methods, and ice-sheet modelling software, with an emphasis on
+reproducible workflows and public-facing research outputs.
 
 ## Current affiliation
 

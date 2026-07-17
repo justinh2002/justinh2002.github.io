@@ -3,41 +3,111 @@ layout: page
 title: "Home"
 ---
 
-<p>
-  I am <strong>Justin Kin Jun Hew</strong>, a Research Software Engineer in the Ice Sheet
-  Modelling team at ACCESS-NRI, hosted at the Australian National University.
-</p>
+<section class="profile-hero">
+  <div class="hero-copy">
+    <span class="eyebrow">Research software engineering · computational physics</span>
+    <h2>Building dependable scientific software for fluid, plasma, and climate research.</h2>
+    <p class="page-lead">
+      I am <strong>Justin Kin Jun Hew</strong>, a Research Software Engineer in the Ice Sheet
+      Modelling team at ACCESS-NRI, hosted at the Australian National University. My work
+      combines numerical methods, high-performance scientific computing, and research
+      collaboration to support reproducible modelling workflows.
+    </p>
+    <p>
+      My research interests span computational fluid dynamics, magnetohydrodynamics,
+      turbulence, shock dynamics, high-order discretisation methods, and research software
+      for large-scale simulation projects.
+    </p>
+    <div class="button-row">
+      <a class="button-link" href="{{ '/research/' | relative_url }}">Explore research</a>
+      <a class="button-link secondary" href="{{ '/publications/' | relative_url }}">View publications</a>
+      <a class="button-link secondary" href="{{ '/about/' | relative_url }}">About this site</a>
+    </div>
+  </div>
 
-<p>
-  My work sits at the intersection of research software engineering, computational physics,
-  high-order numerical methods, magnetohydrodynamics, shock dynamics, and turbulence.
-</p>
+  <aside class="hero-panel">
+    <h3>Professional snapshot</h3>
+    <ul class="stat-list">
+      <li>
+        <span>Current role</span>
+        Research Software Engineer, Ice Sheet Modelling team, ACCESS-NRI
+      </li>
+      <li>
+        <span>Host institution</span>
+        Australian National University
+      </li>
+      <li>
+        <span>Research profile</span>
+        <a class="inline-link" href="https://orcid.org/0000-0002-5238-6115">ORCID 0000-0002-5238-6115</a>
+      </li>
+      <li>
+        <span>Public profile</span>
+        <a class="inline-link" href="https://www.access-nri.org.au/person/justin-kin-jun-hew/">ACCESS-NRI staff page</a>
+      </li>
+    </ul>
+  </aside>
+</section>
 
-<h2>Current Role</h2>
-<ul>
-  <li>Research Software Engineer, Ice Sheet Modelling team, ACCESS-NRI</li>
-  <li>Public profile: <a href="https://www.access-nri.org.au/person/justin-kin-jun-hew/">ACCESS-NRI staff page</a></li>
-  <li>Persistent identifier: <a href="https://orcid.org/0000-0002-5238-6115">ORCID 0000-0002-5238-6115</a></li>
-</ul>
+<section>
+  <h2>Professional focus</h2>
+  <div class="feature-grid">
+    <div class="feature-card">
+      <h3>Research software engineering</h3>
+      <p>
+        Designing and maintaining scientific software that supports reproducible, collaborative,
+        and production-ready research workflows.
+      </p>
+    </div>
+    <div class="feature-card">
+      <h3>Numerical methods</h3>
+      <p>
+        Developing high-order finite-difference and summation-by-parts methods for complex
+        physical systems and conservation-law models.
+      </p>
+    </div>
+    <div class="feature-card">
+      <h3>Fluid and plasma dynamics</h3>
+      <p>
+        Investigating turbulence, magnetohydrodynamics, shock interactions, and rarefied gas
+        flows through simulation and analysis.
+      </p>
+    </div>
+    <div class="feature-card">
+      <h3>Open research outputs</h3>
+      <p>
+        Publishing scholarly work, software, and technical materials that connect numerical
+        rigour with practical scientific computing.
+      </p>
+    </div>
+  </div>
+</section>
 
-<h2>Research Areas</h2>
-<ul>
-  <li>Computational fluid dynamics and shock dynamics</li>
-  <li>Magnetohydrodynamics, plasma turbulence, and turbulent dynamos</li>
-  <li>High-order finite-difference and summation-by-parts methods</li>
-  <li>Rarefied gas dynamics and direct simulation Monte Carlo</li>
-  <li>Research software for ice-sheet modelling and scientific workflows</li>
-</ul>
-
-<h2>Selected Work</h2>
-<ul>
-  <li><em>Conservation of magnetic-helicity fluctuations due to spatial decorrelation of fluxes in decaying MHD turbulence</em> (Journal of Plasma Physics, 2026)</li>
-  <li><em>Strongly stable dual-pairing summation by parts finite difference schemes for the vector invariant nonlinear shallow water equations</em> (Journal of Computational Physics, 2025)</li>
-  <li><em>Lagrangian statistics of a shock-driven turbulent dynamo in decaying turbulence</em> (MNRAS, 2023)</li>
-</ul>
-
-<p>
-  Visit the <a href="{{ '/research/' | relative_url }}">Research</a> page for affiliations,
-  software, and service, or the <a href="{{ '/publications/' | relative_url }}">Publications</a>
-  page for a source-backed list of scholarly outputs.
-</p>
+<section>
+  <h2>Selected publications</h2>
+  <div class="publication-list">
+    <div class="publication-card">
+      <h3>Conservation of magnetic-helicity fluctuations due to spatial decorrelation of fluxes in decaying MHD turbulence</h3>
+      <p class="muted">Journal of Plasma Physics · 2026</p>
+      <p>Analysis of magnetic-helicity transport and decay in turbulent magnetohydrodynamic systems.</p>
+    </div>
+    <div class="publication-card">
+      <h3>Strongly stable dual-pairing summation by parts finite difference schemes for the vector invariant nonlinear shallow water equations</h3>
+      <p class="muted">Journal of Computational Physics · 2025</p>
+      <p>High-order stable discretisation methods for geophysical flow modelling and numerical validation.</p>
+    </div>
+    <div class="publication-card">
+      <h3>Lagrangian statistics of a shock-driven turbulent dynamo in decaying turbulence</h3>
+      <p class="muted">Monthly Notices of the Royal Astronomical Society · 2023</p>
+      <p>Computational study of shock-driven turbulence and magnetic field amplification in decaying flows.</p>
+    </div>
+    <div class="publication-card">
+      <h3>Further outputs and profile links</h3>
+      <p>
+        Visit the <a class="inline-link" href="{{ '/publications/' | relative_url }}">Publications</a>
+        page for a complete source-backed list of scholarly outputs, or the
+        <a class="inline-link" href="{{ '/research/' | relative_url }}">Research</a> page for software,
+        affiliations, and service.
+      </p>
+    </div>
+  </div>
+</section>
