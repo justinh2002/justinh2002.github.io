@@ -4,24 +4,31 @@
 @import index, font, basic, layout, classes
 
 html
-  background: lighten($dark, 70%)
+  background: #eef2f7
   padding: 0 calc(38% - 22em)
 
 body
-  box-shadow: 0 0 .3em lighten($dark, 65%)
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.12)
 
-body > header, body > footer
-  background: lighten($dark, 5%)
+body > header
+  background: $header-bg
+  color: $light
+  border-top: 3px solid $accent
+
+body > footer
+  background: $header-bg
   color: $light
 
 @media (min-width: 32em)
   body > header, body > article, body > footer
-    padding: 1.75em calc(22% - 6em)
+    padding: 1.5em calc(22% - 6em)
 
 @media (prefers-color-scheme: dark)
   html
-    background: darken($dark, 4%)
+    background: #0a0f1e
+  body
+    background: #1e293b
   body > header, body > footer
-    background: $dark
-  body, body > header, body > footer
-    box-shadow: 0 0 0 1px lighten($dark, 8%)
+    background: #0a1628
+  body
+    box-shadow: 0 0 0 1px rgba(59, 130, 246, 0.15), 0 2px 12px rgba(0, 0, 0, 0.4)

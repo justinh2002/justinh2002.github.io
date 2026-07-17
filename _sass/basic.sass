@@ -13,21 +13,20 @@ body
 
 @media (prefers-color-scheme: dark)
   body
-    background: $dark
-    color: $light
+    background: #1e293b
+    color: #f1f5f9
 
 h1, h2, h3, h4, h5, h6
   font-weight: $heading-weight
+  letter-spacing: -0.015em
+  line-height: 1.3
 
 b, strong, th
   font-weight: $font-weight + 200
 
-p
-  text-align: justify
-
 a
   color: $link-color
-  text-decoration: inherit
+  text-decoration: none
   &:hover
     text-decoration: underline
 
@@ -35,32 +34,35 @@ header a, footer a, aside a
   color: inherit
 
 header time
-  color: reduce(100)
+  color: reduce(60)
 
 hr
-  border: 1px solid reduce(30)
+  border: none
+  border-top: 1px solid $border
   margin: 2em 0
 
 article:not(:last-of-type)
-  border-bottom: 1px solid reduce(14)
+  border-bottom: 1px solid reduce(10)
 
 blockquote
-  background: reduce(6)
-  border-left: 3px solid reduce(90)
-  padding: 1px 1.5em
-  opacity: .75
+  background: reduce(4)
+  border-left: 3px solid $accent
+  padding: .75em 1.5em
+  margin: 1.25em 0
+  border-radius: 0 4px 4px 0
+  color: reduce(80)
 
-blockquote, figure
+figure
   margin: 1em 0
 
 img
   margin: .5em 0
 
 li
-  margin: .25em 0
+  margin: .35em 0
 
 img
-  border-radius: 2px
+  border-radius: 3px
   max-width: 100%
   height: auto
 
@@ -68,29 +70,33 @@ table
   display: inline-block
   max-width: 100%
   overflow-y: scroll
-  border-spacing: 1px
-  border-radius: 2px
-  box-shadow: 0 0 0 1px reduce(12) inset
+  border-spacing: 0
+  border-radius: 4px
+  box-shadow: 0 0 0 1px $border inset
 
 th, td
-  padding: .5em 1em
-  box-shadow: 0 0 0 1px reduce(12)
+  padding: .55em 1.1em
+  border-bottom: 1px solid $border
 
-tr:hover, tr:nth-child(odd) td
-  background: reduce(4)
+th
+  background: reduce(5)
+  font-weight: $font-weight + 200
+
+tr:hover td
+  background: reduce(3)
 
 pre
-  background: reduce(12)
-  border-radius: 2px
-  font-size: .8em
+  background: #1e293b
+  color: #f1f5f9
+  border-radius: 6px
+  font-size: .82em
   margin: 1.5em 0
-  padding: .8em 1.2em
+  padding: 1em 1.25em
   overflow-x: auto
 
 \:not(pre) > code
-  font-size: .9em
-  background: reduce(15)
-  opacity: .7
-  border-radius: 2px
+  font-size: .88em
+  background: reduce(8)
+  border-radius: 3px
   margin: 0 .1em
-  padding: .2em .4em
+  padding: .15em .45em

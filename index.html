@@ -1,42 +1,52 @@
 ---
-layout: page
+layout: default
 ---
 
-<p>
-  I am <strong>Justin Kin Jun Hew</strong>, a Research Software Engineer in the Ice Sheet
-  Modelling team at ACCESS-NRI, hosted at the Australian National University.
-</p>
+<article>
+  <section class="hero-intro">
+    <h1>Justin Kin Jun Hew</h1>
+    <p class="hero-role">Research Software Engineer, Ice Sheet Modelling &middot; ACCESS-NRI / ANU</p>
+    <p class="hero-desc">
+      I work at the intersection of research software engineering and computational physics &mdash;
+      spanning magnetohydrodynamics, shock dynamics, high-order numerical methods, and
+      ice-sheet modelling workflows.
+    </p>
+    <div class="hero-links">
+      <a href="{{ '/research/' | relative_url }}" class="hero-btn">Research</a>
+      <a href="{{ '/publications/' | relative_url }}" class="hero-btn">Publications</a>
+      <a href="{{ '/about/' | relative_url }}" class="hero-btn hero-btn-outline">About</a>
+    </div>
+  </section>
 
-<p>
-  My work sits at the intersection of research software engineering, computational physics,
-  high-order numerical methods, magnetohydrodynamics, shock dynamics, and turbulence.
-</p>
+  <section class="home-section">
+    <h2>Research Areas</h2>
+    <ul class="area-grid">
+      <li>Computational fluid dynamics &amp; shock dynamics</li>
+      <li>Magnetohydrodynamics &amp; plasma turbulence</li>
+      <li>Turbulent dynamos &amp; magnetic helicity</li>
+      <li>High-order finite-difference &amp; SBP methods</li>
+      <li>Rarefied gas dynamics &amp; DSMC</li>
+      <li>Ice-sheet modelling software</li>
+    </ul>
+  </section>
 
-<h2>Current Role</h2>
-<ul>
-  <li>Research Software Engineer, Ice Sheet Modelling team, ACCESS-NRI</li>
-  <li>Public profile: <a href="https://www.access-nri.org.au/person/justin-kin-jun-hew/">ACCESS-NRI staff page</a></li>
-  <li>Persistent identifier: <a href="https://orcid.org/0000-0002-5238-6115">ORCID 0000-0002-5238-6115</a></li>
-</ul>
+  <section class="home-section">
+    <h2>Recent Publications</h2>
+    <ol class="pub-list">
+      <li><em>Conservation of magnetic-helicity fluctuations due to spatial decorrelation of fluxes in decaying MHD turbulence</em> &mdash; Journal of Plasma Physics, 2026</li>
+      <li><em>Strongly stable dual-pairing summation by parts finite difference schemes for the vector invariant nonlinear shallow water equations</em> &mdash; Journal of Computational Physics, 2025</li>
+      <li><em>Lagrangian statistics of a shock-driven turbulent dynamo in decaying turbulence</em> &mdash; MNRAS, 2023</li>
+    </ol>
+    <p><a href="{{ '/publications/' | relative_url }}" class="pub-arrow">Full publications list &rarr;</a></p>
+  </section>
 
-<h2>Research Areas</h2>
-<ul>
-  <li>Computational fluid dynamics and shock dynamics</li>
-  <li>Magnetohydrodynamics, plasma turbulence, and turbulent dynamos</li>
-  <li>High-order finite-difference and summation-by-parts methods</li>
-  <li>Rarefied gas dynamics and direct simulation Monte Carlo</li>
-  <li>Research software for ice-sheet modelling and scientific workflows</li>
-</ul>
-
-<h2>Selected Work</h2>
-<ul>
-  <li><em>Conservation of magnetic-helicity fluctuations due to spatial decorrelation of fluxes in decaying MHD turbulence</em> (Journal of Plasma Physics, 2026)</li>
-  <li><em>Strongly stable dual-pairing summation by parts finite difference schemes for the vector invariant nonlinear shallow water equations</em> (Journal of Computational Physics, 2025)</li>
-  <li><em>Lagrangian statistics of a shock-driven turbulent dynamo in decaying turbulence</em> (MNRAS, 2023)</li>
-</ul>
-
-<p>
-  Visit the <a href="{{ '/research/' | relative_url }}">Research</a> page for affiliations,
-  software, and service, or the <a href="{{ '/publications/' | relative_url }}">Publications</a>
-  page for a source-backed list of scholarly outputs.
-</p>
+  <section class="home-section">
+    <h2>Profiles &amp; Links</h2>
+    <ul>
+      <li><a href="https://orcid.org/0000-0002-5238-6115">ORCID 0000-0002-5238-6115</a></li>
+      <li><a href="https://www.access-nri.org.au/person/justin-kin-jun-hew/">ACCESS-NRI staff page</a></li>
+      <li><a href="https://github.com/justinh2002">GitHub</a></li>
+      <li><a href="https://www.researchgate.net/profile/Justin-Kin-Jun-Hew">ResearchGate</a></li>
+    </ul>
+  </section>
+</article>

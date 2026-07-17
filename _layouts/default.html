@@ -29,7 +29,10 @@
 {% endif %}
 
 <header>
-  <a href="{{ "/" | relative_url }}" class="title">{{ site.title | escape }}</a>
+  <div class="site-brand">
+    <a href="{{ "/" | relative_url }}" class="title">{{ site.title | escape }}</a>
+    {% if site.tagline %}<span class="tagline">{{ site.tagline | escape }}</span>{% endif %}
+  </div>
   {% include menu.html menu=pages %}
 </header>
 
