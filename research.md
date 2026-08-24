@@ -35,6 +35,8 @@ fluid dynamics, shock interactions, magnetohydrodynamics, turbulence, numerical 
 ## Research software and open-source work
 
 - [ISSM release contributions on Zenodo](https://zenodo.org/records/18166185)
+- [ISSM Inversion Guide (PDF)](/assets/pdfs/issm_inversion.pdf)
+- [Mathematical Guide to ISSM (PDF)](/assets/pdfs/mathematical_guide_issm.pdf)
 - [pysbp-operators](https://github.com/justinh2002/pysbp-operators)
 - [mhd_data_analysis](https://github.com/justinh2002/mhd_data_analysis)
 - [num_methods_pack](https://github.com/justinh2002/num_methods_pack)
