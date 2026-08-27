@@ -57,24 +57,53 @@ a:hover .icon
   overflow-x: auto
   overflow-y: hidden
 
-// Hero section styles
 .hero-intro
-  padding: 2.5em 0 1.5em
+  padding: 5.5em 0 4em
+  max-width: 52em
+  position: relative
+
+.hero-intro:after
+  content: ""
+  position: absolute
+  right: 4em
+  top: 4.5em
+  width: 6em
+  height: 6em
+  border: 1px solid $accent
+  border-radius: 50%
+  opacity: .7
+
+.hero-kicker, .section-label
+  color: $accent
+  font-size: .75em
+  font-weight: 700
+  letter-spacing: .12em
+  text-transform: uppercase
+
+.hero-kicker
+  margin: 0 0 1.25em
 
 .hero-intro h1
-  font-size: 2.4em
+  color: $dark
+  font-family: Georgia, serif
+  font-size: clamp(3.2em, 8vw, 6.5em)
+  font-weight: 400
+  letter-spacing: -.055em
+  line-height: .95
   margin: 0 0 .3em
-  letter-spacing: -0.03em
-  line-height: 1.15
 
 .hero-role
+  color: $dark
   font-size: 1.05em
-  color: $muted
+  line-height: 1.5
   margin: 0 0 1em
   font-weight: 400
 
 .hero-desc
-  max-width: 42em
+  color: $muted
+  font-size: 1.15em
+  max-width: 39em
+  line-height: 1.6
   margin-bottom: 1.5em
 
 .hero-links
@@ -84,14 +113,16 @@ a:hover .icon
   margin-top: 1.75em
 
 .hero-btn
-  display: inline-block
   background: $link-color
   color: #fff !important
-  padding: .55em 1.35em
-  border-radius: 5px
+  display: inline-block
+  padding: .7em 1.2em
+  border-radius: 2px
   font-weight: 600
   font-size: .95em
   transition: background .2s, transform .15s
+  span
+    margin-left: .6em
   &:hover
     background: darken($link-color, 8%)
     text-decoration: none
@@ -100,37 +131,62 @@ a:hover .icon
 .hero-btn-outline
   background: transparent
   color: $link-color !important
-  border: 2px solid $link-color
+  border: 1px solid $link-color
   &:hover
     background: $link-color
     color: #fff !important
 
-// Home page sections
+.hero-meta
+  border-top: 1px solid $border
+  color: $muted
+  display: flex
+  flex-wrap: wrap
+  gap: 2.5em
+  margin-top: 3.5em
+  padding-top: 1em
+  font-size: .85em
+  strong
+    color: $dark
+    display: block
+    font-size: .75em
+    letter-spacing: .08em
+    text-transform: uppercase
+
+.home-grid
+  display: grid
+  grid-template-columns: .85fr 1.15fr
+  gap: 3.5em
+
 .home-section
-  margin: 2.5em 0 0
-  padding-top: 1.5em
+  margin: 0
+  padding: 2em 0 0
   border-top: 1px solid $border
 
 .home-section h2
-  margin: 0 0 1em
-  font-size: 1.2em
-  text-transform: uppercase
-  letter-spacing: .06em
-  color: $muted
+  color: $dark
+  font-family: Georgia, serif
+  font-size: 1.8em
+  font-weight: 400
+  letter-spacing: -.03em
+  line-height: 1.15
+  margin: 0 0 1.2em
+
+.research-focus h2
+  max-width: 14em
 
 .area-grid
   display: grid
   grid-template-columns: repeat(auto-fill, minmax(15em, 1fr))
-  gap: .55em
+  gap: .65em
   list-style: none
   padding: 0
   margin: 0
 
 .area-grid li
-  background: reduce(4)
-  border-left: 3px solid $accent
-  padding: .6em 1em
-  border-radius: 0 4px 4px 0
+  background: rgba($accent, .12)
+  border-left: 2px solid $accent
+  padding: .7em .9em
+  border-radius: 0
   font-size: .91em
   margin: 0
 
@@ -139,12 +195,64 @@ a:hover .icon
   margin: 0 0 .75em
 
 .pub-list li
-  margin: .85em 0
+  border-bottom: 1px solid $border
+  margin: 0
+  padding: .2em 0 1.1em
   font-size: .93em
+  & + li
+    padding-top: 1.1em
+  span
+    color: $muted
+    display: block
+    font-size: .85em
+    margin-top: .55em
 
 .pub-arrow
   display: inline-block
   font-weight: 600
+  span
+    margin-left: .5em
+
+.profile-strip
+  margin-top: 3.5em
+
+.profile-links
+  display: grid
+  grid-template-columns: repeat(4, 1fr)
+  gap: 1em
+
+.profile-links a
+  border-right: 1px solid $border
+  display: flex
+  flex-direction: column
+  padding: .2em 1em .2em 0
+  &:last-child
+    border-right: 0
+  strong
+    color: $dark
+    font-size: .85em
+  span
+    color: $muted
+    font-size: .8em
+
+@media (max-width: 42em)
+  .hero-intro
+    padding: 3.5em 0 3em
+  .hero-intro:after
+    display: none
+  .home-grid
+    display: block
+  .recent-work
+    margin-top: 3em
+  .profile-links
+    grid-template-columns: repeat(2, 1fr)
+    gap: 1.2em
+  .profile-links a:nth-child(2)
+    border-right: 0
+
+@media (prefers-color-scheme: dark)
+  .hero-intro h1, .home-section h2, .hero-role, .hero-meta strong, .profile-links strong
+    color: #f1f5f9
 
 .rouge-table
   &, th, td, tr, pre
